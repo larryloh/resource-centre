@@ -12,12 +12,18 @@ l = [
     ["L002", "ASUS Vivobook", "Yes", ""],
     ["L003", "HP Pavilion Plus 14", "Yes", ""],
 ]
+MENU_MIN = 0 ###
+MENU_MAX = 5
+TYPE_CAMERA = 1
+TYPE_LAPTOP = 2
+AVAILABLE = "Yes"
+LOANED = "No"
 
 
 def menu():
     x = -1
     # valid choices are 0 to 4 (0 = Quit)
-    while not 0 <= x <= 5:
+    while not MENU_MIN <= x <= MENU_MAX:
         print("\n==============================================")
         print("RESOURCE CENTRE SYSTEM:")
         print("1. Add item")
