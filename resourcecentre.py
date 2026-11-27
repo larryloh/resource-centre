@@ -2,7 +2,7 @@
 # Resource Centre System
 # ============================================================
 
-c = [
+cameras = [
     ["C001", "Nikon COOLPIX L32", "Yes", ""],
     ["C002", "Canon PowerShot A4000 IS", "Yes", ""],
     ["C003", "Olympus TG-6 Tough", "Yes", ""],
@@ -60,7 +60,7 @@ def go():
             if t == 1:
                 tag = input("Enter asset tag >")
                 desc = input("Enter description >")
-                c.append([tag, desc, "Yes", ""])
+                cameras.append([tag, desc, "Yes", ""])
                 print("Digital camera added.")
             elif t == 2:
                 tag = input("Enter asset tag >")
@@ -75,7 +75,7 @@ def go():
             print("==============================================")
             print("Display available items")
             print("==============================================")
-            for i in c:
+            for i in cameras:
                 if i[2] == "Yes":
                     print(i[0], i[1])
             for i in l:
@@ -92,12 +92,12 @@ def go():
             print("2. Laptop")
             t = int(input("Enter option to select item type >"))
             if t == 1:
-                for i in c:
+                for i in cameras:
                     if i[2] == "Yes":
                         print(i[0], i[1])
                 tag = input("Enter asset tag >")
                 d = input("Enter due date >")
-                for i in c:
+                for i in cameras:
                     if i[0] == tag:
                         if i[2] == "Yes":
                             i[2] = "No"
@@ -129,7 +129,7 @@ def go():
             t = int(input("Enter option to select item type >"))
             if t == 1:
                 tag = input("Enter asset tag >")
-                for i in c:
+                for i in cameras:
                     if i[0] == tag:
                         i[2] = "Yes"
                         i[3] = ""
@@ -145,7 +145,7 @@ def go():
                 print("Invalid item type.")
 
         elif x == 5:
-                    print("Cameras available:", count_available(c))
+                    print("Cameras available:", count_available(cameras))
                     print("Laptops available:", count_available(l))
         else:
             print("Invalid choice.")
