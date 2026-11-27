@@ -24,12 +24,19 @@ def menu():
         print("2. Display available items")
         print("3. Loan item")
         print("4. Return item")
+        print("5. Show how many items are available")
         print("0. Quit")
         x = int(input("Enter your choice >"))
         if not 0 <= x <= 5:
             print("Invalid choice, please enter again.\n")
     return x
 
+def count_available(items):
+    count = 0
+    for item in items:
+        if item[2] == "Yes":
+          count = count + 1
+    return count
 
 def go():
     x = menu()
@@ -131,8 +138,13 @@ def go():
             else:
                 print("Invalid item type.")
 
+        elif x == 5:
+                    print("Cameras available:", count_available(c))
+                    print("Laptops available:", count_available(l))
         else:
             print("Invalid choice.")
+        
+        
 
         x = menu()
 
