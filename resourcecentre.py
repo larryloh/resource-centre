@@ -7,7 +7,7 @@ cameras = [
     ["C002", "Canon PowerShot A4000 IS", "Yes", ""],
     ["C003", "Olympus TG-6 Tough", "Yes", ""],
 ]
-l = [
+laptops = [
     ["L001", "Lenovo Yoga Pro 7", "Yes", ""],
     ["L002", "ASUS Vivobook", "Yes", ""],
     ["L003", "HP Pavilion Plus 14", "Yes", ""],
