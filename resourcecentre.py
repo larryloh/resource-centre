@@ -1,7 +1,7 @@
 # ============================================================
 # Resource Centre System
 # ============================================================
-#larry comment
+#larry comment22
 cameras = [
     ["C001", "Nikon COOLPIX L32", "Yes", ""],
     ["C002", "Canon PowerShot A4000 IS", "Yes", ""],
