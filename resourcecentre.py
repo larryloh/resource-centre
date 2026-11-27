@@ -12,7 +12,7 @@ l = [
     ["L002", "ASUS Vivobook", "Yes", ""],
     ["L003", "HP Pavilion Plus 14", "Yes", ""],
 ]
-MENU_MIN = 0
+MENU_MIN = 0 ###
 MENU_MAX = 5
 TYPE_CAMERA = 1
 TYPE_LAPTOP = 2
